@@ -1,0 +1,5 @@
+.mason/
+.dart_tool/
+.idea/
+.packages
+pubspec.lock
