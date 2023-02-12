@@ -5,6 +5,7 @@ part '{{file_name}}_request.g.dart';
 
 part '{{file_name}}_request.freezed.dart';
 
+@freezed
 class {{name}}Request extends DTO with _${{name}}Request {
   const factory {{name}}Request() = _{{name}}Request;
 

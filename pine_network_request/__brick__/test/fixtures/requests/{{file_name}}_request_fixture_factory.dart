@@ -8,7 +8,7 @@ extension {{name}}RequestFixture on {{name}}Request {
 class {{name}}RequestFixtureFactory extends JsonFixtureFactory<{{name}}Request> {
   @override
   FixtureDefinition<{{name}}Request> definition() => define(
-        (faker) => {{name}}Request(),
+        (faker) => const {{name}}Request(),
   );
 
   @override

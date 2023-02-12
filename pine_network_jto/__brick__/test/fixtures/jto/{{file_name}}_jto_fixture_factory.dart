@@ -8,7 +8,7 @@ extension {{name}}JTOFixture on {{name}}JTO {
 class {{name}}JTOFixtureFactory extends JsonFixtureFactory<{{name}}JTO> {
   @override
   FixtureDefinition<{{name}}JTO> definition() => define(
-        (faker) => {{name}}JTO(),
+        (faker) => const {{name}}JTO(),
   );
 
   @override

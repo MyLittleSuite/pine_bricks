@@ -36,11 +36,6 @@ vars:
     description: The DTO name
     default: DashDTO
     prompt: What's the name of the DTO?
-  dto_path:
-    type: string
-    description: The DTO path
-    default: /services/network/jto/dash/dash_jto.dart
-    prompt: What's the path of the DTO? (package name and lib excluded)
   type:
     type: string
     description: The DTO type

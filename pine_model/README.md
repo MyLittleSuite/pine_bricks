@@ -25,7 +25,8 @@ mason make pine_model --name "User"
 --name "User"
 ├── lib
 │   └── models
-│       └── user.dart
+│       └── user
+│           └── user.dart
 ├── test
 │   └── fixtures
 │       └── models
@@ -62,7 +63,7 @@ class UserFixtureFactory extends FixtureFactory<User> {
   @override
   FixtureDefinition<User> definition() =>
       define(
-            (faker) => User(),
+            (faker) => const User(),
       );
 }
 ```

@@ -4,7 +4,8 @@ A brick to create your retrofit service class including tests.
 
 This brick makes use of the internal lib pine_bricks_helper to get access to the package name, so please run this brick
 in the root of your project where a valid pubspec.yaml file exists. Also, make sure you have previously set up your
-project to work with the [Retrofit](https://pub.dev/packages/retrofit) library.
+project to work with the [Retrofit](https://pub.dev/packages/retrofit) and
+the [http_mock_adapter](https://pub.dev/packages/http_mock_adapter) library.
 
 ## How to use 🚀
 
@@ -47,6 +48,8 @@ part 'authentication_service.g.dart';
 @RestApi()
 abstract class AuthenticationService {
   factory AuthenticationService(Dio dio, {String baseUrl}) = _AuthenticationService;
+
+  //TODO: Add your methods
 }
 
 ```
@@ -72,5 +75,7 @@ void main() {
 
     service = AuthenticationService(dio);
   });
+
+  //TODO: Test your methods
 }
 ```

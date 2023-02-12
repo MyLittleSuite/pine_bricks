@@ -1,5 +1,6 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
+import 'dart:async';
 
 part '{{file_name}}_event.dart';
 
@@ -17,7 +18,7 @@ class {{bloc_name}} extends Bloc<{{event}}, {{state}}> {
   }
   {{#events}}
   /// Method used to add the [{{class_name}}] event
-  void {{method}}() => add({{factory_name}}());
+  void {{method}}() => add(const {{factory_name}}());
   {{/events}}
   {{#events}}
   FutureOr<void> {{action}}(

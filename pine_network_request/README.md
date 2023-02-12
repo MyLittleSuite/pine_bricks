@@ -46,6 +46,7 @@ part 'sign_in_request.g.dart';
 
 part 'sign_in_request.freezed.dart';
 
+@freezed
 class SignInRequest extends DTO with _$SignInRequest {
   const factory SignInRequest() = _SignInRequest;
 
@@ -69,7 +70,7 @@ class SignInRequestFixtureFactory extends JsonFixtureFactory<SignInRequest> {
   @override
   FixtureDefinition<SignInRequest> definition() =>
       define(
-            (faker) => SignInRequest(),
+            (faker) => const SignInRequest(),
       );
 
   @override

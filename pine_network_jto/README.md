@@ -46,6 +46,7 @@ part 'user_jto.g.dart';
 
 part 'user_jto.freezed.dart';
 
+@freezed
 class UserJTO extends DTO with _$UserJTO {
   const factory UserJTO() = _UserJTO;
 
@@ -69,7 +70,7 @@ class UserJTOFixtureFactory extends JsonFixtureFactory<UserJTO> {
   @override
   FixtureDefinition<UserJTO> definition() =>
       define(
-            (faker) => UserJTO(),
+            (faker) => const UserJTO(),
       );
 
   @override

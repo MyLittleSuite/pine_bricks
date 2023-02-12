@@ -1,4 +1,5 @@
 import 'package:pine/pine.dart';
+import 'package:flutter/material.dart';
 import 'package:{{package_name}}/pages/{{file_name}}_page.dart';
 import 'package:flutter_test/flutter_test.dart';
 
@@ -8,8 +9,8 @@ void main() {
 
   testWidgets('write your test description here', (tester) async {
     await tester.pumpWidget(
-      DependencyInjectorHelper(
-        child: const MaterialApp(
+      const DependencyInjectorHelper(
+        child: MaterialApp(
           home: {{name}}Page(),
         ),
       ),

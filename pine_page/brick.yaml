@@ -27,12 +27,12 @@ vars:
     default: Dash
     prompt: What's the name of the page?
   state:
-    type: bool
+    type: boolean
     description: Whether the page is stateful or stateless
     default: false
     prompt: Is the page stateful?
   auto_route:
-    type: bool
+    type: boolean
     description: Whether the page should have the AutoRouteWrapper mixin
     default: false
     prompt: Does the page have the AutoRouteWrapper mixin?

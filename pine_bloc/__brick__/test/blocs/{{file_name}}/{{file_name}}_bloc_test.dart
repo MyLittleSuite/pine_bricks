@@ -1,6 +1,6 @@
 import 'package:bloc_test/bloc_test.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:{{package_name}}/blocs/{{file_name}}/{{file_name}}_request.dart';
+import 'package:{{package_name}}/blocs/{{file_name}}/{{file_name}}_bloc.dart';
 
 void main() {
   late {{bloc_name}} bloc;

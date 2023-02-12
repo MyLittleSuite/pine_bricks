@@ -15,8 +15,8 @@ void run(HookContext context) {
 
   final name = context.vars['name'] as String;
   final packageName = pubspec.name;
-  final stateless = context.vars['state'] as bool;
-  final stateful = !stateless;
+  final stateful = context.vars['state'] as bool;
+  final stateless = !stateful;
 
   context.vars = {
     ...context.vars,

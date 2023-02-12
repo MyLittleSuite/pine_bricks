@@ -11,9 +11,11 @@ void main() {
   late {{name}}Service service;
 
   setUp(() {
-      dio = Dio(BaseOptions());
-      dioAdapter = DioAdapter(dio: dio);
+    dio = Dio(BaseOptions());
+    dioAdapter = DioAdapter(dio: dio);
 
-      service = {{name}}Service(dio);
+    service = {{name}}Service(dio);
   });
+
+  //TODO: Test your methods
 }

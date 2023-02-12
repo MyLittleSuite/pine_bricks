@@ -8,6 +8,6 @@ extension {{name}}Fixture on {{name}} {
 class {{name}}FixtureFactory extends FixtureFactory<{{name}}> {
   @override
   FixtureDefinition<{{name}}> definition() => define(
-        (faker) => {{name}}(),
+        (faker) => const {{name}}(),
   );
 }

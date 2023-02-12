@@ -5,6 +5,7 @@ part '{{file_name}}_response.g.dart';
 
 part '{{file_name}}_response.freezed.dart';
 
+@freezed
 class {{name}}Response extends DTO with _${{name}}Response {
   const factory {{name}}Response() = _{{name}}Response;
 

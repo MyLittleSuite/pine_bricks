@@ -42,6 +42,7 @@ mason make pine_cubit --name "SignIn" --methods "perform" --states "performing,p
 ```dart
 import 'package:flutter_cubit/flutter_cubit.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
+import 'dart:async';
 
 part 'sign_in_state.dart';
 
@@ -54,7 +55,7 @@ class SignInCubit extends Cubit<SignInState> {
   SignInCubit() : super(const SignInState.performing());
 
   /// Method used to perform the [perform] action
-  void perform() {
+  FutureOr<void> perform() {
     //TODO: map PerformSignInEvent to SignInState states
   }
 }

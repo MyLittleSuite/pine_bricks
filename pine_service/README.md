@@ -36,6 +36,7 @@ mason make pine_service --name "Authentication"
 ```dart
 /// Abstract class of AuthenticationService
 abstract class AuthenticationService {
+  //TODO: Add your methods
 }
 
 /// Implementation of the base interface AuthenticationService
@@ -48,14 +49,17 @@ class AuthenticationServiceImpl implements AuthenticationService {
 ### Test File
 
 ```dart
-import 'package:{{package_name}}/services/authentication_repository.dart';
+import 'package:flutter_test/flutter_test.dart';
+import 'package:{{package_name}}/services/authentication_service.dart';
 
 /// Test case for the class AuthenticationServiceImpl
 void main() {
   late AuthenticationService service;
 
   setUp(() {
-    service = AuthenticationServiceImpl();
+    service = const AuthenticationServiceImpl();
   });
+
+  //TODO: Test your methods
 }
 ```

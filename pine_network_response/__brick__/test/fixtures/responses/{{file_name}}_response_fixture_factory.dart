@@ -8,7 +8,7 @@ extension {{name}}ResponseFixture on {{name}}Response {
 class {{name}}ResponseFixtureFactory extends JsonFixtureFactory<{{name}}Response> {
   @override
   FixtureDefinition<{{name}}Response> definition() => define(
-        (faker) => {{name}}Response(),
+        (faker) => const {{name}}Response(),
   );
 
   @override

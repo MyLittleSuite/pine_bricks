@@ -36,6 +36,7 @@ mason make pine_repository --name "Authentication"
 ```dart
 /// Abstract class of AuthenticationRepository
 abstract class AuthenticationRepository {
+  //TODO: Add your methods
 }
 
 /// Implementation of the base interface AuthenticationRepository
@@ -48,6 +49,7 @@ class AuthenticationRepositoryImpl implements AuthenticationRepository {
 ### Test File
 
 ```dart
+import 'package:flutter_test/flutter_test.dart';
 import 'package:{{package_name}}/repositories/authentication_repository.dart';
 
 /// Test case for the class AuthenticationRepositoryImpl
@@ -55,7 +57,9 @@ void main() {
   late AuthenticationRepository repository;
 
   setUp(() {
-    repository = AuthenticationRepositoryImpl();
+    repository = const AuthenticationRepositoryImpl();
   });
+
+  //TODO: Test your methods
 }
 ```

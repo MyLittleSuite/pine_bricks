@@ -43,6 +43,7 @@ mason make pine_bloc --name "SignIn" --events "perform" --states "performing,per
 ```dart
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
+import 'dart:async';
 
 part 'sign_in_event.dart';
 
@@ -59,7 +60,7 @@ class SignInBloc extends Bloc<SignInEvent, SignInState> {
   }
 
   /// Method used to add the [PerformSignInEvent] event
-  void perform() => add(SignInEvent.perform());
+  void perform() => add(const SignInEvent.perform());
 
   FutureOr<void> _onPerform(PerformSignInEvent event,
       Emitter<SignInState> emit,) {
@@ -76,7 +77,7 @@ part of 'sign_in_bloc.dart';
 
 @freezed
 class SignInEvent with _$SignInEvent {
-  const factory SignInEvent.perform() => PerformSignInEvent;
+  const factory SignInEvent.perform() = PerformSignInEvent;
 }
 
 ```

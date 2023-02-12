@@ -125,7 +125,7 @@ class SignInPage extends StatefulWidget with AutoRouteWrapper {
   @override
   Widget wrappedRoute(BuildContext context) =>
       MultiBlocProvider(
-        providers: [
+        providers: const [
           //TODO inject your BLoCs here
         ],
         child: this,
@@ -155,6 +155,7 @@ class _SignInState extends State<SignInPage> {
 
 ```dart
 import 'package:pine/pine.dart';
+import 'package:flutter/material.dart';
 import 'package:{{package_name}}/pages/sign_in_page.dart';
 import 'package:flutter_test/flutter_test.dart';
 
@@ -164,8 +165,8 @@ void main() {
 
   testWidgets('write your test description here', (tester) async {
     await tester.pumpWidget(
-      DependencyInjectorHelper(
-        child: const MaterialApp(
+      const DependencyInjectorHelper(
+        child: MaterialApp(
           home: SignInPage(),
         ),
       ),

@@ -1,6 +1,6 @@
 import 'package:bloc_test/bloc_test.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:{{package_name}}/cubits/{{file_name}}/{{file_name}}_request.dart';
+import 'package:{{package_name}}/cubits/{{file_name}}/{{file_name}}_cubit.dart';
 
 void main() {
   late {{cubit_name}} cubit;
