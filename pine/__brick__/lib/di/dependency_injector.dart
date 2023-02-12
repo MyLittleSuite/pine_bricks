@@ -1,7 +1,7 @@
-import 'package:flutter/foundation.dart';
+import 'package:flutter/widgets.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:pine/pine.dart';
-import 'package:provider/provider.dart';
+import 'package:provider/single_child_widget.dart';
 
 part 'blocs.dart';
 

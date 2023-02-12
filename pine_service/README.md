@@ -26,7 +26,7 @@ mason make pine_service --name "Authentication"
 │       └── authentication_service.dart
 ├── test
 │   └── services
-│       └── authentication_service
+│       └── authentication
 │           └── authentication_service_test.dart
 └── ...
 ```

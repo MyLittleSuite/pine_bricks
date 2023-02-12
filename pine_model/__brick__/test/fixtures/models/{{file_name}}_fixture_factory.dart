@@ -1,5 +1,5 @@
 import 'package:data_fixture_dart/data_fixture_dart.dart';
-import 'package:{{package_name}}/models/{{file_name}}.dart';
+import 'package:{{package_name}}/models/{{file_name}}/{{file_name}}.dart';
 
 extension {{name}}Fixture on {{name}} {
   static {{name}}FixtureFactory factory() => {{name}}FixtureFactory();

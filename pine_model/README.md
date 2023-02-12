@@ -53,7 +53,7 @@ class User with _$User {
 
 ```dart
 import 'package:data_fixture_dart/data_fixture_dart.dart';
-import 'package:{{package_name}}/models/user.dart';
+import 'package:{{package_name}}/models/user/user.dart';
 
 extension UserFixture on User {
   static UserFixtureFactory factory() => UserFixtureFactory();

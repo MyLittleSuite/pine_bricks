@@ -3,10 +3,10 @@ import 'package:{{package_name}}/repositories/{{file_name}}_repository.dart';
 
 /// Test case for the class {{name}}RepositoryImpl
 void main() {
-  late {{name}}Repository service;
+  late {{name}}Repository repository;
 
   setUp(() {
-    service = const {{name}}RepositoryImpl();
+    repository = const {{name}}RepositoryImpl();
   });
 
   //TODO: Test your methods
