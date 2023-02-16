@@ -5,6 +5,7 @@ description: A brick to generate a generic retrofit
 # A version number is three numbers separated by dots, like 1.2.34
 # followed by an optional build number (separated by a +).
 version: 0.1.0+1
+repository: https://github.com/MyLittleSuite/pine_bricks/tree/master/pine_retrofit
 
 # The following defines the environment for the current brick.
 # It includes the version of mason that the brick requires.
