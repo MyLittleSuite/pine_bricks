@@ -7,4 +7,7 @@ dependencies:
   mason: ">=0.1.0-dev.40 <0.1.0"
   strings: ^0.2.2
   pine_bricks_helper:
-    path: ../../pine_bricks_helper
+    git:
+      url: https://github.com/MyLittleSuite/pine_bricks.git
+      path: pine_bricks_helper
+      ref: 86ab178b47759e3f88eeff4a82edf6d2719096e2
