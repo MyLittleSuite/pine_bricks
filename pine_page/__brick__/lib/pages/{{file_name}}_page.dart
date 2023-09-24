@@ -6,7 +6,8 @@ import 'package:auto_route/auto_route.dart';
 
 {{#stateful}}
 /// Enter the {{name}} documentation here
-class {{name}}Page extends StatefulWidget {{#auto_route}}with AutoRouteWrapper {{/auto_route}}{
+@RoutePage()
+class {{name}}Page extends StatefulWidget {{#auto_route}}implements AutoRouteWrapper {{/auto_route}}{
 
   /// The constructor of the page.
   const {{name}}Page({super.key});
@@ -42,7 +43,8 @@ class _{{name}}State extends State<{{name}}Page> {
 {{/stateful}}
 {{#stateless}}
 /// Enter the {{name}} documentation here
-class {{name}}Page extends StatelessWidget {{#auto_route}}with AutoRouteWrapper {{/auto_route}}{
+@RoutePage()
+class {{name}}Page extends StatelessWidget {{#auto_route}}implements AutoRouteWrapper {{/auto_route}}{
 
   /// The constructor of the page.
   const {{name}}Page({super.key});

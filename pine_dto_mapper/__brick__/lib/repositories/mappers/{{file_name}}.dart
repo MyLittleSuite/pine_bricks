@@ -3,6 +3,8 @@ import 'package:{{package_name}}/models/{{model_file_name}}/{{model_file_name}}.
 import '{{{dto_full_path}}}';
 
 class {{name}} extends DTOMapper<{{dto_full_name}}, {{model_name}}> {
+  const {{name}}();
+
   @override
   {{model_name}} fromDTO({{dto_full_name}} dto) => {{model_name}}();
 

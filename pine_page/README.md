@@ -41,6 +41,7 @@ mason make pine_page --name "SignIn"
 import 'package:flutter/material.dart';
 
 /// Enter the SignIn documentation here
+@RoutePage()
 class SignInPage extends StatelessWidget {
 
   /// The constructor of the page.
@@ -57,6 +58,7 @@ class SignInPage extends StatelessWidget {
 import 'package:flutter/material.dart';
 
 /// Enter the SignIn documentation here
+@RoutePage()
 class SignInPage extends StatefulWidget {
 
   /// The constructor of the page.
@@ -90,6 +92,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:auto_route/auto_route.dart';
 
 /// Enter the SignIn documentation here
+@RoutePage()
 class SignInPage extends StatelessWidget with AutoRouteWrapper {
 
   /// The constructor of the page.
@@ -117,6 +120,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:auto_route/auto_route.dart';
 
 /// Enter the SignIn documentation here
+@RoutePage()
 class SignInPage extends StatefulWidget with AutoRouteWrapper {
 
   /// The constructor of the page.

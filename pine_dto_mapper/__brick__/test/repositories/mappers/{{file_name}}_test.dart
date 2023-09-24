@@ -13,7 +13,7 @@ void main() {
     dto = {{dto_full_name}}Fixture.factory().makeSingle();
 
     model = {{model_name}}();
-    mapper = {{name}}();
+    mapper = const {{name}}();
   });
 
   test('mapping {{model_name}} object from {{dto_full_name}}', () {

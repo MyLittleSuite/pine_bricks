@@ -43,6 +43,8 @@ import 'package:{{package_name}}/models/user/user.dart';
 import 'package:{{package_name}}/services/network/jto/user/user_jto.dart';
 
 class UserMapper extends DTOMapper<UserJTO, User> {
+  const UserMapper();
+  
   @override
   User fromDTO(UserJTO dto) => User();
 
@@ -70,7 +72,7 @@ void main() {
     dto = UserJTOFixture.factory().makeSingle();
 
     model = User();
-    mapper = UserMapper();
+    mapper = const UserMapper();
   });
 
   test('mapping User object from UserJTO', () {
