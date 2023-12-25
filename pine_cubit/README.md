@@ -69,11 +69,11 @@ part of 'sign_in_cubit.dart';
 
 @freezed
 class SignInState with _$SignInState {
-  const factory SignInState.performing() = _PerformingSignInState;
+  const factory SignInState.performing() = PerformingSignInState;
 
-  const factory SignInState.performed() = _PerformedSignInState;
+  const factory SignInState.performed() = PerformedSignInState;
 
-  const factory SignInState.error() = _ErrorSignInState;
+  const factory SignInState.error() = ErrorSignInState;
 }
 
 ```

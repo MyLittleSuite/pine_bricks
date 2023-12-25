@@ -34,7 +34,7 @@ void run(HookContext context) {
   final rearrangedStates = states
       .map((state) => {
             'factory_name': '${capitalize(name)}State.${state.camelCase}',
-            'class_name': '_${capitalize(state)}${capitalize(name)}State',
+            'class_name': '${capitalize(state)}${capitalize(name)}State',
           })
       .toList(growable: false);
 
