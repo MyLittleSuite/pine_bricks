@@ -1,6 +1,7 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'dart:async';
+{{#context}}import 'package:flutter/material.dart';{{/context}}
 
 part '{{file_name}}_event.dart';
 
@@ -10,7 +11,6 @@ part '{{file_name}}_bloc.freezed.dart';
 
 /// The {{bloc_name}}
 class {{bloc_name}} extends Bloc<{{event}}, {{state}}> {
-
   /// Create a new instance of [{{bloc_name}}].
   {{bloc_name}}() : super(const {{default_state}}()) {
     {{#events}}on<{{class_name}}>({{action}});
@@ -29,3 +29,8 @@ class {{bloc_name}} extends Bloc<{{event}}, {{state}}> {
   }
   {{/events}}
 }
+
+{{#context}}extension {{bloc_name}}Extension on BuildContext {
+  /// Extension method used to get the [{{bloc_name}}] instance
+  {{bloc_name}} get {{bloc_name.camelCase()}} => read<{{bloc_name}}>();
+}{{/context}}

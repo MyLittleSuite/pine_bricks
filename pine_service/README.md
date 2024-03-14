@@ -8,14 +8,16 @@ in the root of your project where a valid pubspec.yaml file exists.
 ## How to use 🚀
 
 ```
-mason make pine_service --name "Authentication"
+mason make pine_service --name "Authentication" --methods "perform"
 ```
 
 ## Variables ✨
 
-| Variable | Description             | Default | Type     |
-|----------|-------------------------|---------|----------|
-| `name`   | The name of the service | Dash    | `string` |
+| Variable | Description                               | Default | Type     |
+|----------|-------------------------------------------|---------|----------|
+| `name`   | The name of the service                   | Dash    | `string` |
+| `methods` | The list of the methods (comma separated) | action  | `string` |
+| `context` | Generate service extension on context     | true    | `boolean`   |
 
 ## Outputs 📦
 
@@ -36,14 +38,23 @@ mason make pine_service --name "Authentication"
 ```dart
 /// Abstract class of AuthenticationService
 abstract class AuthenticationService {
-  //TODO: Add your methods
+  void perform();
 }
 
 /// Implementation of the base interface AuthenticationService
 class AuthenticationServiceImpl implements AuthenticationService {
   const AuthenticationServiceImpl();
+  
+  @override
+  void perform() {
+    
+  }
 }
 
+extension AuthenticationServiceExtension on BuildContext {
+  /// Extension method used to get the [AuthenticationService] instance
+  AuthenticationService get signInCubit => read<AuthenticationService>();
+}
 ```
 
 ### Test File
@@ -60,6 +71,9 @@ void main() {
     service = const AuthenticationServiceImpl();
   });
 
-  //TODO: Test your methods
+  /// Testing the method [perform]
+  group('when the method perform is called', () {
+
+  });
 }
 ```

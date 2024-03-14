@@ -18,8 +18,8 @@ mason make pine_page --name "SignIn"
 | Variable     | Description                                                                                                                                            | Default | Type     |
 |--------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|---------|----------|
 | `name`       | The name of the page                                                                                                                                   | Dash    | `string` |
-| `state`      | Whether the class should be stateful or not                                                                                                            | false   | `bool`   |
-| `auto_route` | Include the AutoRouteWrapper mixin (needs [auto_route](https://pub.dev/packages/auto_route) and [flutter_bloc](https://pub.dev/packages/flutter_bloc)) | false   | `bool`   |
+| `state`      | Whether the class should be stateful or not                                                                                                            | false   | `boolean`   |
+| `auto_route` | Include the AutoRouteWrapper mixin (needs [auto_route](https://pub.dev/packages/auto_route) and [flutter_bloc](https://pub.dev/packages/flutter_bloc)) | false   | `boolean`   |
 
 ## Outputs 📦
 

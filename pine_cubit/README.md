@@ -17,9 +17,10 @@ mason make pine_cubit --name "SignIn" --methods "perform" --states "performing,p
 
 | Variable  | Description                               | Default | Type     |
 |-----------|-------------------------------------------|---------|----------|
-| `name`    | The name of the cubit                      | Dash    | `string` |
+| `name`    | The name of the cubit                     | Dash    | `string` |
 | `methods` | The list of the methods (comma separated) | action  | `string` |
 | `states`  | The list of the states (comma separated)  | initial | `string` |
+| `context` | Generate Cubit extension on context       | true    | `boolean`   |
 
 ## Outputs 📦
 
@@ -60,6 +61,10 @@ class SignInCubit extends Cubit<SignInState> {
   }
 }
 
+extension SignInCubitExtension on BuildContext {
+  /// Extension method used to get the [SignInCubit] instance
+  SignInCubit get signInCubit => read<SignInCubit>();
+}
 ```
 
 ### State File

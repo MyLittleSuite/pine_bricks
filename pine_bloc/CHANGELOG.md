@@ -1,3 +1,7 @@
+# 0.3.0
+
+Added BLoC extension on context
+
 # 0.2.0
 
 State classes are now public to support new Dart 3 Switch Expressions

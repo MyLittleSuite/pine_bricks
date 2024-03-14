@@ -15,9 +15,10 @@ mason make pine_retrofit --name "Authentication"
 
 ## Variables ✨
 
-| Variable | Description                      | Default | Type     |
-|----------|----------------------------------|---------|----------|
-| `name`   | The name of the retrofit service | Dash    | `string` |
+| Variable | Description                            | Default | Type     |
+|----------|----------------------------------------|---------|----------|
+| `name`   | The name of the retrofit service       | Dash    | `string` |
+| `context` | Generate retrofit extension on context | true    | `boolean`   |
 
 ## Outputs 📦
 
@@ -52,6 +53,10 @@ abstract class AuthenticationService {
   //TODO: Add your methods
 }
 
+extension AuthenticationServiceExtension on BuildContext {
+  /// Extension method used to get the [AuthenticationService] instance
+  AuthenticationService get signInCubit => read<AuthenticationService>();
+}
 ```
 
 ### Test File

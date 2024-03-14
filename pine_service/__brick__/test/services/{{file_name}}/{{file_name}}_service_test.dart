@@ -9,5 +9,11 @@ void main() {
     service = const {{name}}ServiceImpl();
   });
 
-  //TODO: Test your methods
+  {{#functions}}
+  /// Testing the method [{{method_name}}]
+  group('when the method {{method_name}} is called', () {
+
+  });
+
+  {{/functions}}
 }

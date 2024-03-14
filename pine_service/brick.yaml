@@ -4,7 +4,7 @@ description: A brick to generate a generic service
 # The following defines the version and build number for your brick.
 # A version number is three numbers separated by dots, like 1.2.34
 # followed by an optional build number (separated by a +).
-version: 0.1.0+2
+version: 0.2.0
 repository: https://github.com/MyLittleSuite/pine_bricks/tree/master/pine_service
 
 # The following defines the environment for the current brick.
@@ -27,3 +27,13 @@ vars:
     description: The service name
     default: Dash
     prompt: What's the name of the service?
+  methods:
+    type: string
+    description: The service methods
+    default: action
+    prompt: What are the service methods (comma separated)?
+  context:
+    type: boolean
+    description: Generate service extension on context
+    default: true
+    prompt: Do you want to generate service extension on context?
