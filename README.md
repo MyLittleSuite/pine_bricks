@@ -28,8 +28,8 @@ A collection of bricks that enable developers to be more productive when writing
 | [pine_network_response](https://brickhub.dev/bricks/pine_network_response) | A brick to create your network response class including fixtures.                                    | 0.1.0   |
 | [pine_page](https://brickhub.dev/bricks/pine_page)                         | A brick to create your pages (stateless, stateful and with or without routing) class including tests. | 0.2.1   |
 | [pine_repository](https://brickhub.dev/bricks/pine_repository)             | A brick to create your repository class including tests.                                             | 0.2.0   |
-| [pine_retrofit](https://brickhub.dev/bricks/pine_retrofit)                 | A brick to create your retrofit service class including tests.                                       | 0.2.0   |
-| [pine_service](https://brickhub.dev/bricks/pine_service)                   | A brick to create your service class including tests.                                                | 0.2.0   |
+| [pine_retrofit](https://brickhub.dev/bricks/pine_retrofit)                 | A brick to create your retrofit service class including tests.                                       | 0.2.0+1 |
+| [pine_service](https://brickhub.dev/bricks/pine_service)                   | A brick to create your service class including tests.                                                | 0.2.0+1 |
 
 ## Documentation
 
