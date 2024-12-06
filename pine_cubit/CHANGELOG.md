@@ -1,3 +1,7 @@
+# 0.4.0
+
+Updated mason minimum version to ^0.1.0
+
 # 0.3.0
 
 Added Cubit extension on context

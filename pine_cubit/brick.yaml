@@ -4,13 +4,13 @@ description: A brick to generate a Cubit
 # The following defines the version and build number for your brick.
 # A version number is three numbers separated by dots, like 1.2.34
 # followed by an optional build number (separated by a +).
-version: 0.3.0
+version: 0.4.0
 repository: https://github.com/MyLittleSuite/pine_bricks/tree/master/pine_cubit
 
 # The following defines the environment for the current brick.
 # It includes the version of mason that the brick requires.
 environment:
-  mason: ">=0.1.0-dev.40 <0.1.0"
+  mason: ^0.1.0
 
 # Variables specify dynamic values that your brick depends on.
 # Zero or more variables can be specified for a given brick.
