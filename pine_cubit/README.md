@@ -61,7 +61,7 @@ class SignInCubit extends Cubit<SignInState> {
   }
 }
 
-extension SignInCubitExtension on BuildContext {
+extension on BuildContext {
   /// Extension method used to get the [SignInCubit] instance
   SignInCubit get signInCubit => read<SignInCubit>();
 }
@@ -73,7 +73,7 @@ extension SignInCubitExtension on BuildContext {
 part of 'sign_in_cubit.dart';
 
 @freezed
-class SignInState with _$SignInState {
+sealed class SignInState with _$SignInState {
   const factory SignInState.performing() = PerformingSignInState;
 
   const factory SignInState.performed() = PerformedSignInState;

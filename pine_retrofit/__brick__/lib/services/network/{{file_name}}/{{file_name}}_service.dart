@@ -13,7 +13,7 @@ abstract class {{name}}Service {
   //TODO: Add your methods
 }
 
-{{#context}}extension {{name}}ServiceExtension on BuildContext {
+{{#context}}extension on BuildContext {
   /// Extension method used to get the [{{name}}Service] instance
   {{name}}Service get {{name.camelCase()}}Service => read<{{name}}Service>();
 }{{/context}}

@@ -1,3 +1,7 @@
+# 0.4.0
+
+Removed extension name.
+
 # 0.3.0
 
 Updated mason minimum version to ^0.1.0

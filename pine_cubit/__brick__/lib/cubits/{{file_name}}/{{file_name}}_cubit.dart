@@ -19,7 +19,7 @@ class {{cubit_name}} extends Cubit<{{state}}> {
   {{/methods}}
 }
 
-{{#context}}extension {{cubit_name}}Extension on BuildContext {
+{{#context}}extension on BuildContext {
   /// Extension method used to get the [{{cubit_name}}] instance
   {{cubit_name}} get {{cubit_name.camelCase()}} => read<{{cubit_name}}>();
 }{{/context}}

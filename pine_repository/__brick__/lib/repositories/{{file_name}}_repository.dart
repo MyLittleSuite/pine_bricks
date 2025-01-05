@@ -2,7 +2,7 @@
 import 'package:provider/provider.dart';{{/context}}
 
 /// Abstract class of {{name}}Repository
-abstract class {{name}}Repository {
+abstract interface class {{name}}Repository {
   {{#functions}}void {{method_name}}();
   {{/functions}}
 }
@@ -19,7 +19,7 @@ class {{name}}RepositoryImpl implements {{name}}Repository {
   {{/functions}}
 }
 
-{{#context}}extension {{name}}RepositoryExtension on BuildContext {
+{{#context}}extension on BuildContext {
   /// Extension method used to get the [{{name}}Repository] instance
   {{name}}Repository get {{name.camelCase()}}Repository => read<{{name}}Repository>();
 }{{/context}}

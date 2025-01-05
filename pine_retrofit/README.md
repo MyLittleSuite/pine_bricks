@@ -53,7 +53,7 @@ abstract class AuthenticationService {
   //TODO: Add your methods
 }
 
-extension AuthenticationServiceExtension on BuildContext {
+extension on BuildContext {
   /// Extension method used to get the [AuthenticationService] instance
   AuthenticationService get signInCubit => read<AuthenticationService>();
 }

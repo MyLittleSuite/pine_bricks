@@ -37,7 +37,7 @@ mason make pine_repository --name "Authentication" --methods "perform"
 
 ```dart
 /// Abstract class of AuthenticationRepository
-abstract class AuthenticationRepository {
+abstract interface class AuthenticationRepository {
   void perform();
 }
 
@@ -51,7 +51,7 @@ class AuthenticationRepositoryImpl implements AuthenticationRepository {
   }
 }
 
-extension AuthenticationRepositoryExtension on BuildContext {
+extension on BuildContext {
   /// Extension method used to get the [AuthenticationRepository] instance
   AuthenticationRepository get signInCubit => read<AuthenticationRepository>();
 }

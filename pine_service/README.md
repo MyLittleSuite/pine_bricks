@@ -37,7 +37,7 @@ mason make pine_service --name "Authentication" --methods "perform"
 
 ```dart
 /// Abstract class of AuthenticationService
-abstract class AuthenticationService {
+abstract interface class AuthenticationService {
   void perform();
 }
 
@@ -51,7 +51,7 @@ class AuthenticationServiceImpl implements AuthenticationService {
   }
 }
 
-extension AuthenticationServiceExtension on BuildContext {
+extension on BuildContext {
   /// Extension method used to get the [AuthenticationService] instance
   AuthenticationService get signInCubit => read<AuthenticationService>();
 }

@@ -1,3 +1,8 @@
+# 0.5.0
+
+Added `sealed` modifier to `BlocState` classes to prevent extending it outside of the library.
+Removed extension name from `Cubit` class.
+
 # 0.4.0
 
 Updated mason minimum version to ^0.1.0

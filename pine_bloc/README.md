@@ -69,7 +69,7 @@ class SignInBloc extends Bloc<SignInEvent, SignInState> {
   }
 }
 
-extension SignInBlocExtension on BuildContext {
+extension on BuildContext {
   /// Extension method used to get the [SignInBloc] instance
   SignInBloc get signInBloc => read<SignInBloc>();
 }
@@ -82,7 +82,7 @@ extension SignInBlocExtension on BuildContext {
 part of 'sign_in_bloc.dart';
 
 @freezed
-class SignInEvent with _$SignInEvent {
+sealed class SignInEvent with _$SignInEvent {
   const factory SignInEvent.perform() = PerformSignInEvent;
 }
 
@@ -94,7 +94,7 @@ class SignInEvent with _$SignInEvent {
 part of 'sign_in_bloc.dart';
 
 @freezed
-class SignInState with _$SignInState {
+sealed class SignInState with _$SignInState {
   const factory SignInState.performing() = PerformingSignInState;
 
   const factory SignInState.performed() = PerformedSignInState;

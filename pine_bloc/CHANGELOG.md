@@ -1,3 +1,8 @@
+# 0.5.0
+
+Added `sealed` modifier to `BlocEvent` and `BlocState` classes to prevent extending them outside of the library.
+Removed extension name from `Bloc` class.
+
 # 0.4.0
 
 Updated mason minimum version to ^0.1.0
