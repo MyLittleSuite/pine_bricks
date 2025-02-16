@@ -19,7 +19,10 @@ class {{cubit_name}} extends Cubit<{{state}}> {
   {{/methods}}
 }
 
-{{#context}}extension on BuildContext {
+{{#context}}extension {{cubit_name}}Extension on BuildContext {
   /// Extension method used to get the [{{cubit_name}}] instance
   {{cubit_name}} get {{cubit_name.camelCase()}} => read<{{cubit_name}}>();
+
+  /// Extension method used to watch the [{{bloc_name}}] instance
+  {{cubit_name}} get {{['watch', cubit_name].join().snakeCase()}} => watch<{{cubit_name}}>();
 }{{/context}}
