@@ -19,7 +19,7 @@ class {{name}}ServiceImpl implements {{name}}Service {
   {{/functions}}
 }
 
-{{#context}}extension on BuildContext {
+{{#context}}extension {{name}}ServiceExtension on BuildContext {
   /// Extension method used to get the [{{name}}Service] instance
   {{name}}Service get {{name.camelCase()}}Service => read<{{name}}Service>();
 }{{/context}}

@@ -19,7 +19,7 @@ class {{name}}RepositoryImpl implements {{name}}Repository {
   {{/functions}}
 }
 
-{{#context}}extension on BuildContext {
+{{#context}}extension {{name}}RepositoryExtension on BuildContext {
   /// Extension method used to get the [{{name}}Repository] instance
   {{name}}Repository get {{name.camelCase()}}Repository => read<{{name}}Repository>();
 }{{/context}}
