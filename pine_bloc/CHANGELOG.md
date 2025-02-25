@@ -1,3 +1,7 @@
+# 0.6.0
+Added extension name from `Bloc` class.
+Added `watch` accessor to `Bloc` class.
+
 # 0.5.0
 
 Added `sealed` modifier to `BlocEvent` and `BlocState` classes to prevent extending them outside of the library.

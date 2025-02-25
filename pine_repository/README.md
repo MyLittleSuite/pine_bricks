@@ -51,7 +51,7 @@ class AuthenticationRepositoryImpl implements AuthenticationRepository {
   }
 }
 
-extension on BuildContext {
+extension AuthenticationRepositoryExtension on BuildContext {
   /// Extension method used to get the [AuthenticationRepository] instance
   AuthenticationRepository get signInCubit => read<AuthenticationRepository>();
 }

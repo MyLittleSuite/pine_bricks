@@ -15,12 +15,12 @@ mason make pine_bloc --name "SignIn" --events "perform" --states "performing,per
 
 ## Variables ✨
 
-| Variable  | Description                             | Default | Type     |
-|-----------|-----------------------------------------|---------|----------|
-| `name`    | The name of the bloc                    | Dash    | `string` |
-| `events`  | The list of the events (comma separated) | action  | `string` |
-| `states`  | The list of the states (comma separated) | initial | `string` |
-| `context` | Generate BLoC extension on context      | true    | `boolean`   |
+| Variable  | Description                              | Default | Type      |
+|-----------|------------------------------------------|---------|-----------|
+| `name`    | The name of the bloc                     | Dash    | `string`  |
+| `events`  | The list of the events (comma separated) | action  | `string`  |
+| `states`  | The list of the states (comma separated) | initial | `string`  |
+| `context` | Generate BLoC extension on context       | true    | `boolean` |
 
 ## Outputs 📦
 
@@ -69,9 +69,12 @@ class SignInBloc extends Bloc<SignInEvent, SignInState> {
   }
 }
 
-extension on BuildContext {
+extension SignInBlocExtension on BuildContext {
   /// Extension method used to get the [SignInBloc] instance
   SignInBloc get signInBloc => read<SignInBloc>();
+  
+  /// Extension method used to watch the [SignInBloc] instance
+  SignInBloc get watchSignInBloc => watch<SignInBloc>();
 }
 
 ```

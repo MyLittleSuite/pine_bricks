@@ -1,3 +1,7 @@
+# 0.6.0
+Added extension name from `Cubit` class.
+Added `watch` accessor to `Cubit` class.
+
 # 0.5.0
 
 Added `sealed` modifier to `BlocState` classes to prevent extending it outside of the library.

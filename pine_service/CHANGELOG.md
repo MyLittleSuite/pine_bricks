@@ -1,3 +1,7 @@
+# 0.5.0
+
+Removed extension name.
+
 # 0.4.0
 
 Added `interface` modifier to prevent extending it outside of the library.
