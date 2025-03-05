@@ -1,3 +1,6 @@
+# 0.6.1
+Fixed `watch` accessor generation.
+
 # 0.6.0
 Added extension name from `Bloc` class.
 Added `watch` accessor to `Bloc` class.

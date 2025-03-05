@@ -19,13 +19,13 @@ A collection of bricks that enable developers to be more productive when writing
 | Brick                                                                      | Description                                                                                           | Version |
 |----------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------|---------|
 | [pine](https://brickhub.dev/bricks/pine)                                   | A brick to create Pine Architecture support files.                                                    | 0.2.0   |
-| [pine_bloc](https://brickhub.dev/bricks/pine_bloc)                         | A brick to create your blocs (with events and states) including tests.                                | 0.6.0   |
-| [pine_cubit](https://brickhub.dev/bricks/pine_cubit)                       | A brick to create your cubits (with methods and states) including tests.                              | 0.6.0   |
+| [pine_bloc](https://brickhub.dev/bricks/pine_bloc)                         | A brick to create your blocs (with events and states) including tests.                                | 0.6.1   |
+| [pine_cubit](https://brickhub.dev/bricks/pine_cubit)                       | A brick to create your cubits (with methods and states) including tests.                              | 0.6.1   |
 | [pine_dto_mapper](https://brickhub.dev/bricks/pine_dto_mapper)             | A brick to create your DTO Mapper class including tests.                                              | 0.3.0   |
-| [pine_model](https://brickhub.dev/bricks/pine_model)                       | A brick to create your network response class including fixtures.                                     | 0.3.0+1 |
-| [pine_network_jto](https://brickhub.dev/bricks/pine_network_jto)           | A brick to create your JSON Transfer Object (JTO) class including fixtures.                           | 0.3.0+1 |
-| [pine_network_request](https://brickhub.dev/bricks/pine_network_request)   | A brick to create your network request class including fixtures.                                      | 0.3.0+1 |
-| [pine_network_response](https://brickhub.dev/bricks/pine_network_response) | A brick to create your network response class including fixtures.                                     | 0.4.0+1 |
+| [pine_model](https://brickhub.dev/bricks/pine_model)                       | A brick to create your network response class including fixtures.                                     | 0.4.0   |
+| [pine_network_jto](https://brickhub.dev/bricks/pine_network_jto)           | A brick to create your JSON Transfer Object (JTO) class including fixtures.                           | 0.4.0   |
+| [pine_network_request](https://brickhub.dev/bricks/pine_network_request)   | A brick to create your network request class including fixtures.                                      | 0.4.0   |
+| [pine_network_response](https://brickhub.dev/bricks/pine_network_response) | A brick to create your network response class including fixtures.                                     | 0.5.0   |
 | [pine_page](https://brickhub.dev/bricks/pine_page)                         | A brick to create your pages (stateless, stateful and with or without routing) class including tests. | 0.3.0   |
 | [pine_repository](https://brickhub.dev/bricks/pine_repository)             | A brick to create your repository class including tests.                                              | 0.5.0   |
 | [pine_retrofit](https://brickhub.dev/bricks/pine_retrofit)                 | A brick to create your retrofit service class including tests.                                        | 0.4.0+1 |

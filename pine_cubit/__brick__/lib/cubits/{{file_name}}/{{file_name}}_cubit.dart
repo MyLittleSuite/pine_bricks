@@ -24,5 +24,5 @@ class {{cubit_name}} extends Cubit<{{state}}> {
   {{cubit_name}} get {{cubit_name.camelCase()}} => read<{{cubit_name}}>();
 
   /// Extension method used to watch the [{{bloc_name}}] instance
-  {{cubit_name}} get {{['watch', cubit_name].join().snakeCase()}} => watch<{{cubit_name}}>();
+  {{cubit_name}} get watch{{cubit_name}} => watch<{{cubit_name}}>();
 }{{/context}}

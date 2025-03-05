@@ -1,3 +1,6 @@
+# 0.6.1
+Fixed `watch` accessor generation.
+
 # 0.6.0
 Added extension name from `Cubit` class.
 Added `watch` accessor to `Cubit` class.

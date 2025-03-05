@@ -6,7 +6,9 @@ part '{{file_name}}_jto.g.dart';
 part '{{file_name}}_jto.freezed.dart';
 
 @freezed
-class {{name}}JTO extends DTO with _${{name}}JTO {
+abstract class {{name}}JTO extends DTO with _${{name}}JTO {
+  const {{name}}JTO._() : super();
+
   const factory {{name}}JTO() = _{{name}}JTO;
 
   factory {{name}}JTO.fromJson(Map<String, dynamic> json) =>
